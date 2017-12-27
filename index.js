@@ -18,7 +18,7 @@ function increaseRankBy(n) {
 
 function deepestChild() {
   const criteriaFn = 'boo'
-  let array = document.getElementById('app').querySelectorAll('div#grand-node')
+  let array = document.getElementById('app').querySelectorAll('#grand-node')
   let current = array
   let next = []
   while (current) {

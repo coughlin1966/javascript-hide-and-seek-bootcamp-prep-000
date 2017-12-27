@@ -43,5 +43,5 @@ function deepestChild() {
   for (var i = 0; !deepestNode.children[i]; i++) {
     deepestNode = deepestNode.children[i]
   }
-  return deepestNode;
+  return deepestNode.innerHTML;
 }

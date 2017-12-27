@@ -34,7 +34,6 @@ current = next.shift()
   }
   return null
 }
-*/
 
 function deepestChild() {
   //var grandNode = document.getElementById('app').querySelectorAll('div#grand-node')
@@ -44,4 +43,16 @@ function deepestChild() {
     deepestNode = deepestNode.children[i]
   }
   return deepestNode.innerHTML;
+}
+*/
+
+function deepestChild(){
+  let grand = document.querySelector('div#grand-node')
+  let next = grand.children[0]
+
+  while (next) {
+    grand = next
+    next = grand.children[0]
+  }
+return grand
 }

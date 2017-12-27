@@ -15,22 +15,13 @@ function increaseRankBy(n) {
   }
 }
 
-
 function deepestChild() {
-  const criteriaFn = 'boo'
-  let array = document.getElementById('app').querySelectorAll('div#grand-node')
-  let current = array
-  let next = []
-  while (current) {
-    if (current = criteriaFn) {
-      return current
-    }
-    if (array.isArray(current)) {
-      for (let i = 0; i < current.length; i++) {
-        next.push(current[i])
+  let grand = document.querySelector('div#grand-node');
+  let next = grand.children[0];
+
+  while (next) {
+    grand = next;
+    next = grand.children[0];
   }
-}
-current = next.shift()
-  }
-  return null
+return grand;
 }

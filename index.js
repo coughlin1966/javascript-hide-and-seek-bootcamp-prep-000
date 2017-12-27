@@ -48,11 +48,11 @@ function deepestChild() {
 
 function deepestChild(){
   let grand = document.querySelector('div#grand-node')
-  let next = grand.child[0]
+  let next = grand.children[0]
 
   while (next) {
     grand = next
-    next = grand.child[0]
+    next = grand.children[0]
   }
 return grand
 }
